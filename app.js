@@ -14,7 +14,7 @@ function error(err){
 function translator(){
     fetch(url)
     .then(response => response.json())
-    .then(json => console.log(json.contents.translated))
+    .then(json => output.value = json.contents.translated)
     .catch(error)
 }
 
